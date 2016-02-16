@@ -1,0 +1,11 @@
+---
+pipeline: "workflows/golang/CanaryReleaseStage/Jenkinsfile"
+buildName: "golang-mongo-sample"
+codeReview: false
+links:
+  Git: "https://github.com/jmlambert78/golang-mongo-sample"
+  Job: "http://172.30.172.149:80/job/golang-mongo-sample"
+  Staging: "http://172.30.59.58:80/kubernetes/pods?namespace=golang-mongo-sample-staging"
+environments:
+  Staging: "golang-mongo-sample-staging"
+useLocalFlow: true
